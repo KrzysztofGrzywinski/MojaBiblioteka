@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="96.0" prefWidth="843.0" spacing="15.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TopMenuButtonsController">
+   <children>
+      <ToggleButton mnemonicParsing="false" onAction="#openBookList" prefHeight="60.0" prefWidth="150.0" text="%books.list">
+         <toggleGroup>
+            <ToggleGroup fx:id="topButtons" />
+         </toggleGroup></ToggleButton>
+      <Button graphicTextGap="10.0" mnemonicParsing="false" onAction="#addBook" prefHeight="60.0" prefWidth="150.0" text="%add.book">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/book-with-add-button_318-46050.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button graphicTextGap="10.0" mnemonicParsing="false" onAction="#addCategory" prefHeight="60.0" prefWidth="150.0" text="%add.category">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/category.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#addAuthor" prefHeight="60.0" prefWidth="150.0" text="%addAuthor">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Inkwell_icon_-_Noun_Project_2512.svg.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</HBox>
