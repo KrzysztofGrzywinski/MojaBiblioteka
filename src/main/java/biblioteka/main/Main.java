@@ -8,6 +8,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import utilities.FxmlUtils;
 
+
 import java.util.Locale;
 
 public class Main extends Application {
